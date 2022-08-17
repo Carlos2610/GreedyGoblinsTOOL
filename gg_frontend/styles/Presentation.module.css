@@ -1,0 +1,210 @@
+.icono {
+  animation-name: spin;
+  animation-duration: 15000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.text {
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.readmore {
+  animation-name: glow;
+  animation-duration: 3000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  font-size: large;
+}
+
+.line {
+  visibility: hidden;
+}
+
+.readmore1 {
+  font-size: large;
+  margin-top: 5%;
+  border-color: #b99728;
+  border-width: 5px;
+  background: url("/pergamino.jpg");
+  padding: 5%;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-style: italic;
+}
+
+.back {
+  padding-top: 1%;
+}
+
+.main {
+  padding-left: 40%;
+  padding-right: 40%;
+}
+
+.mobile {
+  padding-left: 35%;
+  padding-right: 35%;
+}
+
+.go:hover {
+  box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #b99728, 0 0 40px #b99728,
+    0 0 50px #b99728, 0 0 60px #b99728, 0 0 70px #b99728;
+}
+
+.go:hover::after {
+  background-color: transparent;
+}
+
+.centerItems {
+  top: -20px;
+}
+
+@media only screen and (min-width: 1877px) {
+  .mobile {
+    padding-top: 8%;
+  }
+  .text {
+    font-size: larger;
+  }
+}
+
+@media only screen and (max-width: 1660px) {
+  .text {
+    font-size: large;
+  }
+  .centerItems {
+    top: 30px;
+  }
+}
+
+@media only screen and (max-width: 1535px) {
+  .text {
+    font-size: medium;
+  }
+  .go {
+    margin-top: 0;
+  }
+  .back {
+    padding-top: 1%;
+  }
+}
+
+@media only screen and (max-width: 1325px) {
+  .text {
+    font-size: medium;
+  }
+  .go {
+    margin-top: 0;
+  }
+  .centerItems {
+    margin-top: 1%;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  .centerItems {
+    top: 50px;
+    padding: 5%;
+    font-size: medium;
+  }
+}
+
+@media only screen and (max-width: 1191px) {
+  .back {
+    background: fixed top url("/backgorund.png");
+    padding-top: 8%;
+  }
+  .photo {
+    visibility: hidden;
+  }
+  .line {
+    visibility: visible;
+  }
+}
+
+@media only screen and (max-width: 1110px) {
+  .text {
+    font-size: small;
+  }
+  .centerItems {
+    margin-top: 0%;
+    padding: 0;
+  }
+  .mobile {
+    display: block;
+    position: relative;
+  }
+
+  .go {
+    font-size: small;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .main {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .mobile {
+    padding-left: 30%;
+    padding-right: 30%;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .mobile {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  .mobile {
+    top: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .mobile {
+    top: 100px;
+    padding-bottom: 20%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+}
+
+@media only screen and (max-width: 380px) {
+  .mobile {
+    padding-bottom: 25%;
+  }
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #b99728,
+      0 0 40px #b99728, 0 0 50px #b99728, 0 0 60px #b99728, 0 0 70px #b99728;
+  }
+  to {
+    text-shadow: 0 0 20px #111, 0 0 30px #111, 0 0 40px #111, 0 0 50px #111,
+      0 0 60px #111, 0 0 70px #111, 0 0 80px #111;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

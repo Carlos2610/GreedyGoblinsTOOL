@@ -1,0 +1,7 @@
+.backg {
+  background: top url("/backgorund.png");
+}
+.oldsheet {
+  background: no-repeat url("/pergamino.jpg");
+  background-size: cover;
+}

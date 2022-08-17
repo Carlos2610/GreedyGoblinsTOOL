@@ -1,0 +1,66 @@
+.profile {
+  border-color: transparent;
+  background-color: transparent;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff,
+    0 0 50px #fff, 0 0 60px #fff, 0 0 70px #fff;
+}
+
+.profileFoto {
+  border-radius: 50%;
+  border-color: #b99728;
+  border-width: 10px;
+  box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #b99728, 0 0 40px #b99728,
+    0 0 50px #b99728, 0 0 60px #b99728, 0 0 70px #b99728;
+}
+
+.borderGold {
+  position: absolute;
+  top: -100px;
+  height: 135%;
+  width: 150%;
+}
+
+.background {
+  /* background: bottom fixed url("/backgorund.png"); */
+  background-color: #082c1c;
+  padding: 5%;
+  border-color: #b99728;
+}
+
+@media only screen and (max-width: 1580px) {
+  .profileFoto {
+    margin: 20%;
+  }
+  .background {
+    padding: 2%;
+  }
+  .links {
+    margin-right: 25%;
+    margin-left: 25%;
+  }
+  .profile {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 1350px) {
+  .inbox {
+    padding: 5%;
+  }
+  .profileFoto {
+    border-width: 3.5px;
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  .cards {
+    display: block;
+  }
+  .profile {
+    padding: 2%;
+    margin: 5%;
+  }
+  .profileFoto {
+    margin: 25%;
+  }
+}

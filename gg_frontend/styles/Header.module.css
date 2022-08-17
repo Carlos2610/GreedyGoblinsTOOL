@@ -1,0 +1,72 @@
+.myHeaderColours {
+  background-color: #082c1c;
+  color: #e5d16b;
+}
+
+.logIns {
+  padding-left: 15%;
+}
+
+.nav {
+  position: fixed;
+  z-index: 50;
+  width: 100%;
+}
+
+.item:hover {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.76),
+    0 0 20px rgba(255, 255, 255, 0.822), 0 0 30px #866e1d, 0 0 40px #866e1d,
+    0 0 50px #866e1d, 0 0 60px #866e1d, 0 0 70px #866e1d;
+}
+
+@media only screen and (max-width: 1350px) {
+  .logIns {
+    padding: 0%;
+    font-size: small;
+  }
+  .nav {
+    font-size: small;
+  }
+}
+
+@media only screen and (max-width: 1225px) {
+  .ariabut {
+    margin-left: 50%;
+  }
+  .icon {
+    margin-right: 50%;
+  }
+}
+
+@media only screen and (max-width: 1020px) {
+  .logIns {
+    visibility: hidden;
+  }
+  .nav {
+    padding-left: 0%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .nav {
+    padding-left: 0%;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .logIns {
+    visibility: visible;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .nav {
+    padding: 0%;
+    margin: 0%;
+    text-align: center;
+    align-items: center;
+  }
+  .logo {
+    visibility: hidden;
+  }
+}
